@@ -18,17 +18,19 @@ The solution uses AWS Budgets, Amazon SNS, AWS Cost Explorer, and AWS Cost Anoma
 - Improve cloud cost visibility and financial awareness.
 
 ## 🏗️ Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart TD
-    A[AWS Services and Resources] --> B[AWS Cost Monitoring]
-    B --> C[AWS Budgets]
-    B --> D[AWS Cost Explorer]
-    B --> E[Cost Anomaly Detection]
-    C --> F[Amazon SNS]
+    A["AWS Services and Resources"] --> B["AWS Cost Monitoring"]
+    B --> C["AWS Budgets"]
+    B --> D["AWS Cost Explorer"]
+    B --> E["Cost Anomaly Detection"]
+    C --> F["Amazon SNS"]
     E --> F
-    F --> G[Email Notifications]
-    D --> H[Cost Analysis and Reports]
+    F --> G["Email Notifications"]
+    D --> H["Cost Analysis and Reports"]
+```
 🛠️ AWS Services Used
 AWS Service	Purpose
 AWS Budgets	Set monthly spending limits and cost alerts
