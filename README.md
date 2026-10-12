@@ -95,7 +95,7 @@ The following screenshots demonstrate the AWS project configuration.
 
 ### 4. SNS Email Subscription
 
-![SNS Email Subscription](Screenshots/04-sns-subscription.png)
+![SNS Email Subscription](Screenshots/04-sns-subscription..png)
 
 ### 5. AWS Cost Explorer
 
