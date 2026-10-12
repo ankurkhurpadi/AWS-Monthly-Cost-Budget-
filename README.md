@@ -1,5 +1,3 @@
-Purana content replace karke neeche diya gaya poora content paste karo.
-
 # AWS Cost Monitoring & Budget Alert System
 
 ## 📌 Project Overview
@@ -18,11 +16,10 @@ The solution uses AWS Budgets, Amazon SNS, AWS Cost Explorer, and AWS Cost Anoma
 - Improve cloud cost visibility and financial awareness.
 
 ## 🏗️ Architecture
-## 🏗️ Architecture
 
 ```mermaid
 flowchart TD
-    A["AWS Services and Resources"] --> B["AWS Cost Monitoring"]
+    A["AWS Services and Resources"] --> B["Cost Monitoring"]
     B --> C["AWS Budgets"]
     B --> D["AWS Cost Explorer"]
     B --> E["Cost Anomaly Detection"]
@@ -31,103 +28,112 @@ flowchart TD
     F --> G["Email Notifications"]
     D --> H["Cost Analysis and Reports"]
 ```
-🛠️ AWS Services Used
-AWS Service	Purpose
-AWS Budgets	Set monthly spending limits and cost alerts
-Amazon SNS	Deliver budget and anomaly notifications through email
-AWS Cost Explorer	Analyze AWS costs and spending trends
-AWS Cost Anomaly Detection	Identify unusual spending patterns
-AWS IAM	Manage access to AWS resources
-⚙️ Project Implementation
-1. AWS Budget Configuration
 
-Created a monthly AWS budget named AWS-Monthly-Cost-Budget.
+## 🛠️ AWS Services Used
 
-Budget type: Monthly cost budget
-Budget amount: $5
-Scope: All AWS services
-Cost metric: Unblended cost
-Alert thresholds: 50%, 80%, and 100% of the budget
+| AWS Service | Purpose |
+|---|---|
+| AWS Budgets | Configure monthly spending limits and budget alerts |
+| Amazon SNS | Send email notifications |
+| AWS Cost Explorer | Analyze AWS spending and cost trends |
+| AWS Cost Anomaly Detection | Detect unusual spending patterns |
+| AWS IAM | Manage access to AWS resources |
 
-Configured alerts to help monitor spending as it approaches the monthly budget limit.
+## ⚙️ Project Implementation
 
-2. Amazon SNS Configuration
+### 1. AWS Budget Configuration
 
-Created an SNS topic named aws-cost-alerts-topic.
+Created a monthly budget named `AWS-Monthly-Cost-Budget`.
 
-Configured an email subscription.
-Confirmed the email subscription.
-Published a test message to verify email delivery.
-Used SNS as the notification destination for budget alerts.
-3. AWS Cost Explorer
+- Budget type: Monthly cost budget
+- Budget amount: $5
+- Scope: All AWS services
+- Cost metric: Unblended cost
+- Alert thresholds: 50%, 80%, and 100%
+
+### 2. Amazon SNS Configuration
+
+Created an SNS topic named `aws-cost-alerts-topic`.
+
+- Configured an email subscription.
+- Confirmed the email subscription.
+- Published a test message to verify email delivery.
+- Configured SNS as the notification destination for budget alerts.
+
+### 3. AWS Cost Explorer
 
 Used AWS Cost Explorer to review AWS spending information.
 
-Viewed monthly cost data.
-Reviewed service-wise cost information.
-Explored spending trends for cost monitoring.
-4. AWS Cost Anomaly Detection
+- Viewed monthly cost data.
+- Explored service-wise costs.
+- Reviewed spending trends.
+
+### 4. AWS Cost Anomaly Detection
 
 Used AWS Cost Anomaly Detection to monitor unusual spending patterns.
 
-Reviewed the existing service monitor.
-Examined detected spending anomalies.
-Configured anomaly notification preferences.
-Reviewed alert frequency and notification thresholds.
-📸 Project Screenshots
+- Reviewed the existing service monitor.
+- Examined detected spending anomalies.
+- Reviewed anomaly notification settings.
+- Checked alert frequency and threshold configuration.
 
-The following screenshots demonstrate the AWS configuration and implementation.
+## 📸 Project Screenshots
 
-1. AWS Monthly Budget
+The following screenshots demonstrate the AWS project configuration.
 
-Shows the monthly AWS budget configuration.
+### 1. AWS Monthly Budget
 
-2. AWS Budget Alerts
+![AWS Monthly Budget](Screenshots/01-aws-budget.png)
 
-Shows the configured budget alert thresholds.
+### 2. AWS Budget Alerts
 
-3. Amazon SNS Topic
+![AWS Budget Alerts](Screenshots/02-budget-alerts.png)
 
-Shows the SNS topic created for cost notifications.
+### 3. Amazon SNS Topic
 
-4. SNS Email Subscription
+![Amazon SNS Topic](Screenshots/03-sns-topic.png)
 
-Shows the SNS email subscription configuration.
+### 4. SNS Email Subscription
 
-5. AWS Cost Explorer
+![SNS Email Subscription](Screenshots/04-sns-subscription.png)
 
-Shows the AWS Cost Explorer dashboard for cost analysis.
+### 5. AWS Cost Explorer
 
-6. Cost Anomaly Detection Monitor
+![AWS Cost Explorer](Screenshots/05-cost-explorer.png)
 
-Shows the service monitor used to identify unusual AWS spending.
+### 6. Cost Anomaly Detection Monitor
 
-7. Cost Anomaly Alert Subscription
+![Cost Anomaly Detection Monitor](Screenshots/06-cost-anomaly-monitor.png)
 
-Shows the anomaly notification frequency and alert threshold configuration.
+### 7. Cost Anomaly Alert Subscription
 
-🔐 Security and Cost Management Practices
-Used AWS Budgets to establish a spending limit.
-Configured email notifications for cost awareness.
-Used AWS IAM to manage access to AWS resources.
-Reviewed AWS spending to identify unexpected costs.
-Monitored anomalous spending using Cost Anomaly Detection.
-Avoided exposing credentials or sensitive account information in the repository.
-📚 Key Learnings
-Creating and managing AWS Budgets.
-Configuring Amazon SNS email notifications.
-Analyzing cloud costs using AWS Cost Explorer.
-Monitoring unusual spending with Cost Anomaly Detection.
-Documenting AWS projects using GitHub and Markdown.
-Understanding the importance of cloud cost optimization.
-🚀 Future Improvements
-Create additional cost reports and spending visualizations.
-Explore automated notifications and remediation workflows.
-Improve cost forecasting and anomaly monitoring.
-Integrate cost monitoring into a broader cloud operations workflow.
-👨‍💻 Author
+![Cost Anomaly Alert Subscription](Screenshots/07-anomaly-subscription.png)
 
-Ankur Khurpadi
+## 🔐 Security and Cost Management
 
-GitHub: https://github.com/ankurkhurpadi
-Portfolio: https://techankur.cloud
+- Configured AWS Budgets to monitor spending.
+- Used email alerts to improve cost awareness.
+- Reviewed AWS spending to identify unexpected costs.
+- Used Cost Anomaly Detection to monitor unusual spending.
+- Avoided including credentials and sensitive account information in the repository.
+
+## 📚 Key Learnings
+
+- Creating and managing AWS Budgets.
+- Configuring Amazon SNS email notifications.
+- Analyzing costs using AWS Cost Explorer.
+- Monitoring unusual spending with Cost Anomaly Detection.
+- Documenting cloud projects using GitHub and Markdown.
+
+## 🚀 Future Improvements
+
+- Develop additional cost reports and visualizations.
+- Explore cost forecasting and optimization.
+- Improve automated cost monitoring and notification workflows.
+
+## 👨‍💻 Author
+
+**Ankur Khurpadi**
+
+- GitHub: https://github.com/ankurkhurpadi
+- Portfolio: https://techankur.cloud
