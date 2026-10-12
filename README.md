@@ -95,6 +95,45 @@ Reviewed the budget alert thresholds, SNS subscription, and anomaly notification
 
 Budget alerts and anomaly notifications are separate notification mechanisms and should be tested independently.
 
+---
+
+## 📸 Project Screenshots
+
+### 1. AWS Monthly Budget
+Displays the monthly AWS budget configuration.
+
+![AWS Monthly Budget](screenshots/01-aws-budget.png)
+
+### 2. Budget Alerts
+Shows the configured budget alert thresholds.
+
+![Budget Alerts](screenshots/02-budget-alerts.png)
+
+### 3. Amazon SNS Topic
+SNS topic configured to receive AWS cost notifications.
+
+![SNS Topic](screenshots/03-sns-topic.png)
+
+### 4. SNS Email Subscription
+Shows the SNS email subscription configuration.
+
+![SNS Subscription](screenshots/04-sns-subscription.png)
+
+### 5. AWS Cost Explorer
+Displays AWS cost information and monthly spending.
+
+![AWS Cost Explorer](screenshots/05-cost-explorer.png)
+
+### 6. Cost Anomaly Detection Monitor
+Shows the monitor used to identify unusual AWS spending.
+
+![Cost Anomaly Monitor](screenshots/06-cost-anomaly-monitor.png)
+
+### 7. Anomaly Alert Subscription
+Displays the alert frequency and anomaly notification threshold.
+
+![Anomaly Subscription](screenshots/07-anomaly-subscription.png)
+
 ## 🔐 Security and Cost Management Practices
 
 * Use IAM permissions based on the principle of least privilege.
